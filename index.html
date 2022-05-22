@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komputer Store</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+
+</head>
+
+<body class="bg-success text-dark bg-opacity-10">
+
+  <nav class="navbar navbar-dark bg-dark shadow">
+    <div class="container-fluid">
+    <a class="navbar-brand mx-auto p-2" href="#">KOMPUTER STORE</a>
+    </div>
+  </nav>
+
+
+
+<main class="container-fluid">
+          
+  <div class="container">
+
+    <div class="row p-5 d-flex justify-content-between">
+
+          
+      
+<div class="col-3 rounded border bg-light shadow">
+
+  <div class="mb-2 p-2 d-flex justify-content-center">
+        <h3>The bank</h3>
+  </div>
+
+  <div class="d-flex justify-content-between p-2">
+
+      <div class="mb-2">
+        <p>Balance:</p> 
+        <div id="balanceAmount"></div>
+      </div>
+
+  </div>
+<div class="d-flex justify-content-center p-2">
+        
+        <button class="btn btn-success btn-lg shadow rounded-pill" id="getLoan">Get a loan</button>
+</div>
+
+<br>
+
+        <span id="outstandingLoan"></span>
+
+</div>
+
+
+
+
+
+<div class="col-3 p-2 border rounded bg-light shadow">
+  
+    <div class="mb-2 d-flex justify-content-center">
+        <h3>Work</h3>
+    </div>
+
+    <div  class="d-flex justify-content-between p-2">
+     
+        <p>Pay:</p> 
+        <div id="payAmount"></div>
+
+    </div>
+
+
+    <div  class="d-flex justify-content-between p-2">
+
+      <button class="btn btn-success btn-lg shadow rounded-pill" onclick="addWorkButton(100)" id="addWorkButton">Work</button>
+      <button class="btn btn-warning btn-lg shadow rounded-pill" id="addBalanceToBankButton">Bank</button> 
+    
+    </div>
+
+</div>
+
+
+<div class="col-3 p-2 rounded border bg-light shadow">  
+
+    <div class="mb-3 d-flex justify-content-center">
+        <h3>Laptop</h3>
+    </div>
+
+    <div class="mb-2">
+     
+        <select name="computer" id="computers">
+      </select>
+
+    </div>
+
+    <div class="p-2">
+    
+        <h5>Features:</h5>
+
+        <ul id="features"></ul>
+      </div>
+
+</div>
+
+</div>
+    
+
+<div class="row p-3 d-flex justify-content-center">
+
+<div class="col-11 p-4 border rounded bg-light shadow">
+
+    <div class="d-flex justify-content-between">
+
+
+    <div>
+
+      <div class="p-2 mb-3">
+        <h3 id="title"></h3>
+      </div>
+      
+        <div>
+            <img class="d-inline-block" style="width: 250px;"" id="computer-image" src=""/>
+        </div>
+
+    </div>
+      
+        <div class="p-2 w-25">
+          <h4>Description</h4>
+            <span id="desc"></span>
+            
+          </div>
+
+          <div class="m-2">
+            <h3 id="price"></h3> 
+           </div>
+
+  <div>
+
+          <div>
+            <button class="btn btn-primary btn-lg shadow rounded-pill" id="buyNow">Buy now</button>
+          </div>
+        </div>
+
+    </div>
+
+    </div>
+</div>
+
+  </div>
+
+</main>
+
+
+<script src="app.js"></script>
+</body>
+</html>
+
